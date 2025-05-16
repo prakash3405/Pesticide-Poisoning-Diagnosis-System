@@ -1,0 +1,140 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Login</title>
+
+  <link rel="icon" href="images/icon.png" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #e0f7ff;
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header-title {
+      background-color: white;
+      text-align: center;
+      padding: 20px 0 5px;
+      font-family: 'Fredoka One', cursive;
+      color: #f44336;
+      font-size: 28px;
+    }
+
+    .navbar-custom {
+      background-color: #4f7df9;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .navbar-custom a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navbar-custom a:hover {
+      text-decoration: underline;
+    }
+
+    .login-container {
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+      max-width: 400px;
+      width: 100%;
+      margin: 40px auto;
+    }
+
+    .style2 {
+      font-family: 'Righteous', cursive;
+      color: #023e8a;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border-radius: 8px;
+      border: 1px solid #0077b6;
+      background-color: #eaf8ff;
+      color: #023e8a;
+      font-weight: bold;
+    }
+
+    input[type="submit"] {
+      background-color: #0096c7;
+      border: none;
+      color: white;
+      padding: 10px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+      width: 100%;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0077b6;
+    }
+
+    .btn-secondary {
+      background-color: #90e0ef;
+      color: #03045e;
+      font-weight: bold;
+      border: none;
+      transition: background-color 0.3s ease;
+      width: 100%;
+    }
+
+    .btn-secondary:hover {
+      background-color: #48cae4;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header-title">
+    PESTICIDE POISONING DIAGNOSIS SYSTEM
+  </div>
+  <div class="navbar-custom">
+    <a href="{% url 'index' %}">Home</a>
+    <span style="color:white">|</span>
+    <a href="{% url 'login' %}">Remote User</a>
+    <span style="color:white">|</span>
+    <a href="{% url 'serviceproviderlogin' %}">Service Provider</a>
+  </div>
+
+  <div class="login-container">
+    <form method="POST" role="form">
+      {% csrf_token %}
+      <fieldset>
+        <p class="style2">Login Service Provider:</p>
+        <div class="form-group">
+          <input type="text" name="username" placeholder="User Name" required>
+        </div>
+        <div class="form-group">
+          <input type="password" name="password" placeholder="Password" required>
+        </div>
+        <div>
+          <input type="submit" name="submit1" value="Login">
+        </div>
+      </fieldset>
+      <br>
+      <a href="{% url 'login' %}" class="btn btn-secondary">User Login</a>
+    </form>
+  </div>
+
+</body>
+</html>

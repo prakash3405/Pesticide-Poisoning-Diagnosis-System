@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Service Provider</title>
+  <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Open+Sans|Righteous" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f0f8ff;
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header-title {
+      background-color: white;
+      text-align: center;
+      padding: 20px 0 10px;
+      font-family: 'Fredoka One', cursive;
+      color: #f44336;
+      font-size: 28px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .topnav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: #4f7df9;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .topnav a {
+      color: white;
+      padding: 12px 18px;
+      text-decoration: none;
+      font-size: 14px;
+      /* font-weight: bold; */
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .topnav a:hover {
+      background-color: #5a91f2;
+      color: #fff;
+    }
+
+    .topnav a.active {
+      background-color: #4154d1;
+    }
+
+    .mainholder {
+      padding: 30px;
+      max-width: 1200px;
+      margin: 20px auto;
+      background-color: #ffffff;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header-title">
+    PESTICIDE POISONING DIAGNOSIS SYSTEM
+  </div>
+
+  <div class="topnav">
+    <a href="{% url 'train_model' %}">Browse and Train & Test Data Sets</a>
+    <a href="{% url 'likeschart' 'bar' %}">View Trained and Tested Accuracy in Bar Chart</a>
+    <a href="{% url 'charts1' 'line' %}">View Trained and Tested Accuracy Results</a>
+    <a href="{% url 'View_Prediction_Of_Drug_Response' %}">View Prediction Of Pesticide Poisoning Status</a>
+    <a href="{% url 'View_Drug_Response_Ratio' %}">View Pesticide Poisoning Ratio</a>
+    <!-- <a href="{% url 'Download_Trained_DataSets' %}">Download Predicted Data Sets</a> -->
+    <a href="{% url 'charts' 'line' %}">View Pesticide Poisoning Ratio Results</a>
+    <a href="{% url 'View_Remote_Users' %}">View All Remote Users</a>
+    <a href="{% url 'index' %}">Logout</a>
+  </div>
+
+  <div class="mainholder">
+    {% block researchblock %}
+    {% endblock %}
+  </div>
+
+</body>
+</html>

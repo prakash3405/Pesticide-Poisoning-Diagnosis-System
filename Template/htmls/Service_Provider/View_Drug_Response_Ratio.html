@@ -1,0 +1,94 @@
+{% extends 'SProvider/Header.html' %}
+{% block researchblock %}
+
+<link href="https://fonts.googleapis.com/css?family=Lobster|Righteous|Fredoka+One" rel="stylesheet">
+
+<style>
+  body {
+    background-color: #f5f7fa; /* Light background */
+    font-family: 'Righteous', cursive;
+    margin: 0;
+    padding: 0;
+  }
+
+  #title {
+    font-family: 'Fredoka One', cursive;
+    color: #343a40;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 32px;
+  }
+
+  .style1 {
+    color: #d90429;
+    font-size: 24px;
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+    overflow: hidden;
+  }
+
+  table th, table td {
+    padding: 12px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #dee2e6;
+  }
+
+  table thead {
+    background-color: #0077b6;
+    color: white;
+  }
+
+  table tbody tr:nth-child(even) {
+    background-color: #f1f3f5;
+  }
+
+  table tbody tr:nth-child(odd) {
+    background-color: #e0f7fa;
+  }
+
+  table td span {
+    font-family: monospace;
+    color: #003049;
+  }
+
+  .model-name {
+    color: #0077b6;
+    font-family: 'Righteous', cursive;
+  }
+</style>
+
+<body>
+    <p class="style1">Detect Pesticide Poisoning Diagnosis Ratio Details</p>
+    <hr>
+    <div class="table-responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th>Attack Type</th>
+                    <th>Ratio</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for object in objs %}
+                <tr>
+                    <td class="model-name">{{ object.names }}</td>
+                    <td><span>{{ object.ratio }}</span></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+
+{% endblock %}

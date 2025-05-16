@@ -1,0 +1,141 @@
+{% extends 'SProvider/Header.html' %}
+{% block researchblock %}
+
+<link rel="icon" href="images/icon.png" type="image/x-icon" />
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+
+<style>
+    body {
+        background-color: #f4f7fc;
+        font-family: 'Russo One', sans-serif;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    .text-uppercase {
+        font-family: 'Righteous', cursive;
+        font-size: 24px;
+        color: #e74c3c;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .tweettext {
+        width: 100%;
+        margin-top: 20px;
+        border: 2px solid #2ecc71;
+    }
+
+    .style1 {
+        color: #e74c3c;
+        font-weight: bold;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: auto; /* Allowing the table to take its natural width */
+        margin: 20px 0;
+    }
+
+    th, td {
+        padding: 12px;
+        text-align: center;
+        font-size: 16px;
+        word-wrap: break-word;
+        vertical-align: middle;
+        white-space: nowrap; /* Prevent wrapping of content */
+    }
+
+    th {
+        background-color: #2ecc71;
+        color: white;
+        font-size: 12px;
+        text-transform: uppercase;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    td {
+        background-color: #ffffff;
+        color: #333;
+        border-bottom: 1px solid #ddd;
+    }
+
+    tr:nth-child(even) td {
+        background-color: #f9f9f9;
+    }
+
+    tr:hover td {
+        background-color: #f1f1f1;
+    }
+
+    /* Make the table scrollable horizontally */
+    .table-wrapper {
+        width: 100%;
+        overflow-x: auto;  /* Enables horizontal scrolling */
+        margin-top: 20px;
+    }
+
+    /* Column width adjustments for header visibility */
+    th:nth-child(1), td:nth-child(1) { width: 10%; } /* Age */
+    th:nth-child(2), td:nth-child(2) { width: 15%; } /* Years_of_Exposure */
+    th:nth-child(3), td:nth-child(3) { width: 15%; } /* Number_of_Symptoms */
+    th:nth-child(4), td:nth-child(4) { width: 20%; } /* Protective_Gear_Usage */
+    th:nth-child(5), td:nth-child(5) { width: 20%; } /* Work_Hours_per_Day */
+    th:nth-child(6), td:nth-child(6) { width: 20%; } /* Proximity_to_Pesticide_Storage */
+    th:nth-child(7), td:nth-child(7) { width: 15%; } /* Gender */
+    th:nth-child(8), td:nth-child(8) { width: 25%; } /* Pesticide_Type */
+    th:nth-child(9), td:nth-child(9) { width: 25%; } /* Location */
+    th:nth-child(10), td:nth-child(10) { width: 25%; } /* Symptoms */
+    th:nth-child(11), td:nth-child(11) { width: 25%; } /* Pesticide_Contact */
+    th:nth-child(12), td:nth-child(12) { width: 40%; } /* Prediction */
+</style>
+
+<body>
+    <div class="text-uppercase style1">View Pesticide Poisoning Diagnosis Prediction Type Details</div>
+    <div class="tweettext table-wrapper">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Age</th>
+                    <th>Years_of_Exposure</th>
+                    <th>No_of_Symptoms</th>
+                    <th>Protection</th>
+                    <th>Work_Hours/Day</th>
+                    <th>Proximity_to_Storage</th>
+                    <th>Gender</th>
+                    <th>Pesticide_Type</th>
+                    <th>Location</th>
+                    <th>Symptoms</th>
+                    <th>Pesticide_Contact</th>
+                    <th>Prediction</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for object in list_objects %}
+                <tr>
+                    <td>{{ object.Age }}</td>
+                    <td>{{ object.Years_of_Exposure }}</td>
+                    <td>{{ object.Number_of_Symptoms }}</td>
+                    <td>{{ object.Protective_Gear_Usage }}</td>
+                    <td>{{ object.Work_Hours_per_Day }}</td>
+                    <td>{{ object.Proximity_to_Pesticide_Storage }}</td>
+                    <td>{{ object.Gender }}</td>
+                    <td>{{ object.Pesticide_Type }}</td>
+                    <td>{{ object.Location }}</td>
+                    <td>{{ object.Symptoms }}</td>
+                    <td>{{ object.Pesticide_Contact }}</td>
+                    <td>{{ object.Prediction }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+
+{% endblock %}
