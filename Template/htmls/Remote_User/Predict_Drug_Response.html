@@ -1,0 +1,159 @@
+{% extends 'RUser/Header.html' %}
+{% block userblock %}
+
+<link rel="icon" href="images/icon.png" type="image/x-icon" />
+
+<link href="https://fonts.googleapis.com/css?family=Inter:400,600&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        background-color: #f0f2f5;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .container-fluid {
+        padding: 50px;
+    }
+
+    .container {
+        background-color: #ffffff;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .style1 {
+        color: #0d6efd;
+        font-weight: bold;
+        font-size: 22px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .style4 {
+        color: #ffffff;
+        font-weight: 600;
+        background-color: #0d6efd;
+        padding: 10px;
+        text-align: center;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .style6 {
+        font-size: 20px;
+        color: #000000;
+        font-weight: bold;
+    }
+
+    input[type="text"], input[type="number"] {
+        width: 95%;
+        padding: 10px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+    }
+
+    input[type="submit"] {
+        background-color: #0d6efd;
+        color: white;
+        padding: 10px 20px;
+        margin-top: 20px;
+        border: none;
+        border-radius: 8px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0b5ed7;
+    }
+
+    table {
+        width: 100%;
+        border-spacing: 15px;
+    }
+
+    td {
+        vertical-align: top;
+    }
+
+    .result-box {
+        background-color: #eaf4ff;
+        padding: 15px;
+        border-left: 5px solid #0d6efd;
+        border-radius: 8px;
+        margin-top: 20px;
+        font-size: 18px;
+        color: #333;
+    }
+
+</style>
+
+<body>
+    <div class="container-fluid">
+        <div class="container">
+
+            <form role="form" method="POST">
+                {% csrf_token %}
+                <fieldset>
+                    <div class="style1">PREDICTION OF PESTSIDE POISONING</div>
+                    <hr>
+
+                    <table>
+                        <tr>
+                            <td><div class="style4">Enter Age</div></td>
+                            <td><input type="text" name="Age"></td>
+                            <td><div class="style4">Enter Years_of_Exposure</div></td>
+                            <td><input type="text" name="Years_of_Exposure"></td>
+                        </tr>
+                        <tr>
+                            <td><div class="style4">Enter Number_of_Symptoms</div></td>
+                            <td><input type="text" name="Number_of_Symptoms"></td>
+                            <td><div class="style4">Enter Protective_Gear_Usage</div></td>
+                            <td><input type="text" name="Protective_Gear_Usage"></td>
+                        </tr>
+                        <tr>
+                            <td><div class="style4">Enter Work_Hours_per_Day</div></td>
+                            <td><input type="text" name="Work_Hours_per_Day"></td>
+                            <td><div class="style4">Enter Proximity_to_Pesticide_Storage</div></td>
+                            <td><input type="text" name="Proximity_to_Pesticide_Storage"></td>
+                        </tr>
+                        <tr>
+                            <td><div class="style4">Enter Gender</div></td>
+                            <td><input type="text" name="Gender"></td>
+                            <td><div class="style4">Enter Pesticide_Type</div></td>
+                            <td><input type="text" name="Pesticide_Type"></td>
+                        </tr>
+                        <tr>
+                            <td><div class="style4">Enter Location</div></td>
+                            <td><input type="text" name="Location"></td>
+                            <td><div class="style4">Enter Symptoms</div></td>
+                            <td><input type="text" name="Symptoms"></td>
+                        </tr>
+                        <tr>
+                            <td><div class="style4">Enter Pesticide_Contact</div></td>
+                            <td><input type="text" name="Pesticide_Contact"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input name="submit" type="submit" value="Predict"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+
+            {% if objs %}
+            <div class="result-box">
+                <strong>Prediction of Pesticide Poisoning Diagnosis Status:</strong>
+                <div>{{ objs }}</div>
+            </div>
+            {% endif %}
+
+        </div>
+    </div>
+</body>
+{% endblock %}

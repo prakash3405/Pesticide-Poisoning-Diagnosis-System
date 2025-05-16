@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+{% load static %}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Login</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'coin-slider.css' %}" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+  <link href="https://unpkg.com/soft-ui-design-system@1.0.1/assets/css/soft-design-system.min.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="{% static 'cufon-yui.js' %}"></script>
+  <script type="text/javascript" src="{% static 'cufon-aller.js' %}"></script>
+  <script type="text/javascript" src="{% static 'jquery-1.4.2.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'script.js' %}"></script>
+  <script type="text/javascript" src="{% static 'coin-slider.min.js' %}"></script>
+
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    .login-container {
+      max-width: 500px;
+      margin: 60px auto;
+      padding: 40px;
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .login-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .login-header h2 {
+      color: #2c3e50;
+      font-weight: 700;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 12px 15px;
+      margin-bottom: 15px;
+      border: 1px solid #ced4da;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+
+    .btn-custom {
+      width: 100%;
+      padding: 12px;
+      background-color: #4e73df;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-custom:hover {
+      background-color: #2e59d9;
+    }
+
+    .register-link {
+      margin-top: 15px;
+      text-align: center;
+    }
+
+    .register-link a {
+      color: #4e73df;
+      font-weight: bold;
+    }
+
+    .alert-nav {
+      background-color: #4e73df;
+      color: white;
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .alert-nav a {
+      color: white;
+      margin: 0 10px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    img.banner {
+      max-width: 100%;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+
+    .main-title {
+      text-align: center;
+      color: #e74c3c;
+      font-size: 28px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div class="header">
+      <div class="header_resize">
+        <div class="menu_nav"><p>&nbsp;</p></div>
+        <div class="mainbar">
+          <h1 class="main-title">
+            PESTICIDE POISONING DIAGNOSIS SYSTEM
+          </h1>
+
+          <div class="alert-nav">
+            <a href="{% url 'index' %}">Home</a> |
+            <a href="{% url 'login' %}">Remote User</a> |
+            <a href="{% url 'serviceproviderlogin' %}">Service Provider</a>
+          </div>
+
+          <!-- <img src="{% static 'Banner.jpg' %}" alt="Banner" class="banner" /> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container login-container">
+      <div class="login-header">
+        <h2>PESTICIDE POISONING DIAGNOSIS SYSTEM</h2>
+        <img src="{% static 'login.jpg' %}" alt="Login Image" style="width: 100px; margin-bottom: 10px;">
+        <p class="text-danger">Login Using Your Account</p>
+      </div>
+
+      <form method="POST" role="form">
+        {% csrf_token %}
+        <input type="text" name="username" placeholder="User Name" class="form-control" required>
+        <input type="password" name="password" placeholder="Password" class="form-control" required>
+        <input type="submit" name="submit1" value="Login" class="btn btn-custom">
+
+        <div class="register-link">
+          <p>Are you a new user? <a href="{% url 'Register1' %}">Register here</a></p>
+        </div>
+      </form>
+    </div>
+
+    <div class="footer"></div>
+  </div>
+</body>
+</html>

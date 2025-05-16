@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+{% load static %}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Home Page</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <link rel="stylesheet" type="text/css" href="{% static 'style.css'%}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'coin-slider.css'%}" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+  <link href="https://unpkg.com/soft-ui-design-system@1.0.1/assets/css/soft-design-system.min.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="{% static 'cufon-yui.js'%}"></script>
+  <script type="text/javascript" src="{% static 'cufon-aller.js'%}"></script>
+  <script type="text/javascript" src="{% static 'jquery-1.4.2.min.js'%}"></script>
+  <script type="text/javascript" src="{% static 'script.js'%}"></script>
+  <script type="text/javascript" src="{% static 'coin-slider.min.js'%}"></script>
+
+  <style type="text/css">
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: #e74c3c;
+      font-weight: bold;
+      font-size: 28px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .main {
+      padding-bottom: 40px;
+    }
+
+    .header_resize {
+      padding: 20px;
+    }
+
+    .alert-nav {
+      background-color: #4e73df;
+      color: white;
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .alert-nav a {
+      color: white;
+      margin: 0 10px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    img.banner {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+
+    .content_resize {
+      padding: 20px;
+    }
+
+    .clr {
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div class="header">
+      <div class="header_resize">
+        <div class="menu_nav"><p>&nbsp;</p></div>
+        <div class="mainbar">
+          <h1>PESTICIDE POISONING DIAGNOSIS SYSTEM</h1>
+
+          <div class="alert-nav">
+            <a href="{% url 'index' %}">Home</a> |
+            <a href="{% url 'login' %}">Remote User</a> |
+            <a href="{% url 'serviceproviderlogin' %}">Service Provider</a>
+          </div>
+
+          <img src="{% static 'Banner.jpg' %}" alt="Banner" width="1480" height="500" class="f1" />
+        </div>
+        <div class="clr"></div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="content_resize">
+        <div class="mainbar">
+          <!-- Removed h2 title, img1.jpg, and bottom paragraph -->
+        </div>
+        <div class="sidebar">
+          <div class="searchform"></div>
+        </div>
+        <div class="clr"></div>
+      </div>
+    </div>
+
+    <div class="fbg"></div>
+    <div class="footer"></div>
+  </div>
+</body>
+</html>

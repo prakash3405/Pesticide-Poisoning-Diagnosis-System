@@ -1,0 +1,110 @@
+{% extends 'RUser/Header.html' %}
+{% block userblock %}
+
+<link rel="icon" href="images/icon.png" type="image/x-icon" />
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        background: linear-gradient(to right, #e0eafc, #cfdef3);
+        font-family: 'Poppins', sans-serif;
+        color: #333;
+    }
+
+    .container-fluid {
+        padding: 50px 0;
+    }
+
+    .container {
+        background-color: #ffffff;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    #title {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+        color: #2c3e50;
+    }
+
+    .text-uppercase {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 20px;
+        color: #34495e;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .table td {
+        padding: 12px;
+        vertical-align: middle;
+    }
+
+    .table th,
+    .table td {
+        border-top: none !important;
+    }
+
+    .highlight-label {
+        background-color: #3498db;
+        color: navy;
+        padding: 8px 12px;
+        border-radius: 8px;
+        font-weight: bold;
+    }
+
+    .highlight-value {
+        color: #2c3e50;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <form role="form" method="POST">
+                        {% csrf_token %}
+                        <fieldset>
+                            <p class="text-uppercase">Your Profile Details</p>
+                            <hr>
+                            <table class="table table-borderless">
+                                <tr>
+                                    <td class="highlight-label">Username</td>
+                                    <td class="highlight-value">{{ object.username }}</td>
+                                    <td class="highlight-label">Email Id</td>
+                                    <td class="highlight-value">{{ object.email }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="highlight-label">Mobile Number</td>
+                                    <td class="highlight-value">{{ object.phoneno }}</td>
+                                    <td class="highlight-label">Gender</td>
+                                    <td class="highlight-value">{{ object.gender }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="highlight-label">Address</td>
+                                    <td class="highlight-value">{{ object.address }}</td>
+                                    <td class="highlight-label">Country</td>
+                                    <td class="highlight-value">{{ object.country }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="highlight-label">State</td>
+                                    <td class="highlight-value">{{ object.state }}</td>
+                                    <td class="highlight-label">City</td>
+                                    <td class="highlight-value">{{ object.city }}</td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+{% endblock %}
