@@ -1,0 +1,187 @@
+Age,Years_of_Exposure,Number_of_Symptoms,Protective_Gear_Usage,Work_Hours_per_Day,Proximity_to_Pesticide_Storage,Gender,Pesticide_Type,Location,Symptoms,Pesticide_Contact,Label
+34,10,5,1,8,1,Male,Fungicides,Narayanpet,Vomiting,Direct,1
+28,7,2,0,10,0,Female,Insecticides,Jogulamba Gadwal,"Vomiting, Cough, Nausea",Direct,0
+45,15,6,1,6,1,Female,Bactericides,Siddipet,Fever,Indirect,1
+32,5,3,1,7,0,Female,Fungicides,Jagtial,"Dizziness, Vomiting, Skin Allergy",Direct,0
+37,8,4,0,9,1,Female,Insecticides,Jayashankar Bhupalpally,"Fever, Nausea, Breathing Difficulty",Indirect,1
+29,6,2,0,8,0,Female,Bactericides,Mancherial,"Vomiting, Dizziness",Direct,0
+41,12,5,1,7,1,Female,Biopesticides,Bhadradri Kothagudem,Breathing Difficulty,Direct,1
+33,4,1,1,6,0,Male,Herbicides,Jangaon,Breathing Difficulty,Indirect,0
+39,9,3,0,10,1,Male,Biopesticides,Nizamabad,"Nausea, Dizziness",Indirect,1
+30,7,2,1,8,0,Female,Herbicides,Mahabubnagar,Breathing Difficulty,Direct,0
+36,10,5,0,9,1,Male,Bactericides,Nizamabad,"Skin Allergy, Dizziness, Fever",Indirect,1
+31,6,1,1,7,0,Male,Insecticides,Medchal–Malkajgiri,"Skin Allergy, Nausea",Indirect,0
+42,14,6,0,10,1,Male,Fungicides,Medak,"Breathing Difficulty, Nausea",Direct,1
+35,8,3,1,6,0,Female,Bactericides,Mahabubnagar,"Nausea, Dizziness",Indirect,0
+40,11,4,0,8,1,Male,Bactericides,Bhadradri Kothagudem,"Vomiting, Fever",Indirect,1
+29,5,2,1,9,0,Male,Biopesticides,Nagarkurnool,"Cough, Dizziness, Skin Allergy",Indirect,0
+38,10,5,0,7,1,Female,Herbicides,Adilabad,"Cough, Nausea, Skin Allergy",Indirect,1
+34,7,3,1,8,0,Male,Bactericides,Medchal–Malkajgiri,"Skin Allergy, Nausea",Indirect,0
+46,15,6,0,10,1,Female,Herbicides,Nizamabad,"Cough, Nausea, Vomiting",Indirect,1
+28,6,2,1,6,0,Female,Biopesticides,Adilabad,Skin Allergy,Direct,0
+43,13,5,0,9,1,Male,Biopesticides,Jangaon,"Fever, Skin Allergy",Direct,1
+32,4,1,1,7,0,Male,Insecticides,Karimnagar,"Skin Allergy, Cough",Indirect,0
+37,9,4,0,10,1,Male,Biopesticides,Sangareddy,"Dizziness, Fever, Breathing Difficulty",Indirect,1
+30,5,2,1,8,0,Male,Bactericides,Hyderabad,"Fever, Breathing Difficulty",Indirect,0
+44,14,6,0,7,1,Female,Bactericides,Suryapet,"Cough, Skin Allergy, Fever",Direct,1
+33,7,3,1,9,0,Female,Bactericides,Jangaon,"Cough, Breathing Difficulty, Nausea",Direct,0
+39,11,5,0,8,1,Male,Herbicides,Suryapet,"Cough, Fever, Dizziness",Direct,1
+31,6,1,1,7,0,Female,Insecticides,Sangareddy,Dizziness,Direct,0
+35,9,4,0,10,1,Female,Bactericides,Suryapet,Breathing Difficulty,Indirect,1
+40,12,5,1,6,0,Male,Biopesticides,Mancherial,Cough,Direct,1
+29,4,2,0,9,1,Female,Bactericides,Nalgonda,Dizziness,Direct,0
+38,10,3,1,8,0,Female,Herbicides,Medak,Cough,Indirect,0
+34,8,4,0,7,1,Female,Bactericides,Medak,Skin Allergy,Direct,1
+41,13,5,1,10,0,Female,Herbicides,Vikarabad,"Skin Allergy, Breathing Difficulty",Direct,1
+28,5,1,0,9,1,Male,Fungicides,Wanaparthy,"Skin Allergy, Breathing Difficulty, Cough",Direct,0
+36,11,6,1,8,0,Male,Herbicides,Medchal–Malkajgiri,"Dizziness, Fever, Cough",Direct,1
+30,6,2,0,7,1,Female,Fungicides,Medak,"Breathing Difficulty, Vomiting, Dizziness",Direct,0
+45,14,4,1,10,0,Female,Insecticides,Peddapalli,"Breathing Difficulty, Vomiting, Fever",Direct,1
+32,8,3,0,9,1,Male,Biopesticides,Suryapet,"Nausea, Vomiting, Skin Allergy",Indirect,0
+37,9,5,1,8,0,Female,Biopesticides,Peddapalli,"Breathing Difficulty, Fever",Direct,1
+31,5,1,0,7,1,Male,Bactericides,Suryapet,"Nausea, Dizziness, Skin Allergy",Indirect,0
+42,12,6,1,10,0,Female,Bactericides,Vikarabad,"Cough, Breathing Difficulty",Indirect,1
+35,7,2,0,9,1,Female,Fungicides,Nalgonda,Breathing Difficulty,Direct,0
+39,10,4,1,8,0,Male,Bactericides,Mahabubnagar,Vomiting,Direct,1
+34,6,3,0,7,1,Female,Biopesticides,Narayanpet,"Breathing Difficulty, Nausea, Vomiting",Indirect,0
+46,15,5,1,10,0,Male,Herbicides,Yadadri Bhuvanagiri,"Vomiting, Cough, Skin Allergy",Direct,1
+28,4,1,0,9,1,Male,Herbicides,Adilabad,Fever,Indirect,0
+43,13,6,1,8,0,Male,Herbicides,Mahabubnagar,"Cough, Fever",Direct,1
+33,9,2,0,7,1,Female,Insecticides,Warangal Urban,"Vomiting, Dizziness, Cough",Direct,0
+38,11,4,1,10,0,Male,Biopesticides,Jogulamba Gadwal,"Fever, Dizziness",Indirect,1
+30,5,1,0,8,1,Female,Biopesticides,Komaram Bheem,Cough,Indirect,0
+44,14,5,1,9,0,Male,Fungicides,Nirmal,"Cough, Dizziness",Indirect,1
+29,6,3,0,7,1,Male,Fungicides,Kamareddy,"Fever, Nausea",Indirect,0
+41,12,6,1,10,0,Female,Biopesticides,Jogulamba Gadwal,Breathing Difficulty,Direct,1
+32,8,2,0,9,1,Female,Insecticides,Siddipet,Vomiting,Indirect,0
+37,10,4,1,8,0,Female,Biopesticides,Jagtial,Cough,Indirect,1
+34,5,1,0,7,1,Female,Insecticides,Mahabubabad,"Fever, Cough, Nausea",Direct,0
+40,13,5,1,10,0,Male,Herbicides,Mahabubabad,"Breathing Difficulty, Fever, Vomiting",Indirect,1
+31,6,3,0,9,1,Female,Insecticides,Ranga Reddy,"Nausea, Skin Allergy, Fever",Direct,0
+45,15,6,1,8,0,Female,Insecticides,Yadadri Bhuvanagiri,"Nausea, Skin Allergy",Direct,1
+33,7,2,0,7,1,Male,Herbicides,Suryapet,"Fever, Vomiting",Direct,0
+38,11,4,1,10,0,Female,Fungicides,Ranga Reddy,"Breathing Difficulty, Nausea, Vomiting",Indirect,1
+29,4,1,0,9,1,Female,Fungicides,Komaram Bheem,Nausea,Direct,0
+42,14,6,1,8,0,Female,Insecticides,Medchal–Malkajgiri,"Skin Allergy, Dizziness",Indirect,1
+36,9,3,0,7,1,Male,Biopesticides,Mahabubabad,"Dizziness, Vomiting, Nausea",Direct,0
+30,5,2,1,10,0,Female,Herbicides,Suryapet,Breathing Difficulty,Direct,1
+43,12,5,0,9,1,Female,Bactericides,Peddapalli,"Skin Allergy, Nausea, Vomiting",Indirect,0
+28,7,1,1,8,0,Male,Herbicides,Peddapalli,"Dizziness, Vomiting, Nausea",Direct,1
+39,10,4,0,7,1,Male,Biopesticides,Nalgonda,"Cough, Skin Allergy, Fever",Direct,0
+35,6,3,1,10,0,Female,Insecticides,Adilabad,"Breathing Difficulty, Fever",Direct,1
+40,11,5,0,9,1,Male,Herbicides,Nalgonda,Nausea,Indirect,0
+31,5,1,1,8,0,Female,Biopesticides,Nalgonda,Dizziness,Direct,1
+34,8,4,0,7,1,Male,Fungicides,Jangaon,"Skin Allergy, Nausea",Direct,0
+37,9,3,1,10,0,Female,Fungicides,Jangaon,"Dizziness, Breathing Difficulty",Indirect,1
+41,13,5,0,9,1,Female,Fungicides,Mulugu,"Fever, Nausea",Direct,0
+30,4,2,1,8,0,Male,Fungicides,Adilabad,"Vomiting, Breathing Difficulty, Cough",Indirect,1
+44,14,6,0,7,1,Female,Fungicides,Mulugu,"Cough, Fever, Dizziness",Indirect,0
+33,6,1,1,10,0,Female,Fungicides,Komaram Bheem,"Cough, Nausea",Indirect,1
+38,10,4,0,9,1,Male,Insecticides,Khammam,Dizziness,Indirect,0
+32,5,3,1,8,0,Male,Biopesticides,Mahabubnagar,Breathing Difficulty,Direct,1
+46,15,5,0,7,1,Male,Herbicides,Mahabubnagar,Breathing Difficulty,Indirect,0
+29,7,2,1,10,0,Male,Herbicides,Jangaon,Vomiting,Indirect,1
+42,12,6,0,9,1,Female,Bactericides,Medchal–Malkajgiri,"Breathing Difficulty, Dizziness, Fever",Direct,0
+35,9,3,1,8,0,Male,Biopesticides,Wanaparthy,"Cough, Dizziness",Direct,1
+40,11,5,0,7,1,Male,Insecticides,Medak,"Skin Allergy, Nausea",Direct,0
+31,6,1,1,10,0,Female,Fungicides,Komaram Bheem,"Nausea, Skin Allergy, Vomiting",Indirect,1
+34,8,4,0,9,1,Female,Bactericides,Mahabubnagar,"Breathing Difficulty, Skin Allergy, Dizziness",Direct,0
+37,5,3,1,8,0,Female,Insecticides,Mahabubnagar,"Nausea, Breathing Difficulty, Vomiting",Indirect,1
+45,14,6,0,7,1,Male,Herbicides,Ranga Reddy,"Nausea, Vomiting",Direct,0
+28,7,1,1,10,0,Female,Biopesticides,Adilabad,"Cough, Dizziness, Vomiting",Direct,1
+43,13,5,0,9,1,Male,Fungicides,Suryapet,Breathing Difficulty,Direct,0
+30,6,2,1,8,0,Male,Insecticides,Medchal–Malkajgiri,"Cough, Vomiting",Indirect,1
+39,10,4,0,7,1,Female,Bactericides,Karimnagar,Fever,Direct,0
+34,10,5,1,8,1,Male,Fungicides,Narayanpet,Vomiting,Direct,1
+28,7,2,0,10,0,Female,Insecticides,Jogulamba Gadwal,"Vomiting, Cough, Nausea",Direct,0
+45,15,6,1,6,1,Female,Bactericides,Siddipet,Fever,Indirect,1
+32,5,3,1,7,0,Female,Fungicides,Jagtial,"Dizziness, Vomiting, Skin Allergy",Direct,0
+37,8,4,0,9,1,Female,Insecticides,Jayashankar Bhupalpally,"Fever, Nausea, Breathing Difficulty",Indirect,1
+29,6,2,0,8,0,Female,Bactericides,Mancherial,"Vomiting, Dizziness",Direct,0
+41,12,5,1,7,1,Female,Biopesticides,Bhadradri Kothagudem,Breathing Difficulty,Direct,1
+33,4,1,1,6,0,Male,Herbicides,Jangaon,Breathing Difficulty,Indirect,0
+39,9,3,0,10,1,Male,Biopesticides,Nizamabad,"Nausea, Dizziness",Indirect,1
+30,7,2,1,8,0,Female,Herbicides,Mahabubnagar,Breathing Difficulty,Direct,0
+36,10,5,0,9,1,Male,Bactericides,Nizamabad,"Skin Allergy, Dizziness, Fever",Indirect,1
+31,6,1,1,7,0,Male,Insecticides,Medchal–Malkajgiri,"Skin Allergy, Nausea",Indirect,0
+42,14,6,0,10,1,Male,Fungicides,Medak,"Breathing Difficulty, Nausea",Direct,1
+35,8,3,1,6,0,Female,Bactericides,Mahabubnagar,"Nausea, Dizziness",Indirect,0
+40,11,4,0,8,1,Male,Bactericides,Bhadradri Kothagudem,"Vomiting, Fever",Indirect,1
+29,5,2,1,9,0,Male,Biopesticides,Nagarkurnool,"Cough, Dizziness, Skin Allergy",Indirect,0
+38,10,5,0,7,1,Female,Herbicides,Adilabad,"Cough, Nausea, Skin Allergy",Indirect,1
+34,7,3,1,8,0,Male,Bactericides,Medchal–Malkajgiri,"Skin Allergy, Nausea",Indirect,0
+46,15,6,0,10,1,Female,Herbicides,Nizamabad,"Cough, Nausea, Vomiting",Indirect,1
+28,6,2,1,6,0,Female,Biopesticides,Adilabad,Skin Allergy,Direct,0
+43,13,5,0,9,1,Male,Biopesticides,Jangaon,"Fever, Skin Allergy",Direct,1
+32,4,1,1,7,0,Male,Insecticides,Karimnagar,"Skin Allergy, Cough",Indirect,0
+37,9,4,0,10,1,Male,Biopesticides,Sangareddy,"Dizziness, Fever, Breathing Difficulty",Indirect,1
+30,5,2,1,8,0,Male,Bactericides,Hyderabad,"Fever, Breathing Difficulty",Indirect,0
+44,14,6,0,7,1,Female,Bactericides,Suryapet,"Cough, Skin Allergy, Fever",Direct,1
+33,7,3,1,9,0,Female,Bactericides,Jangaon,"Cough, Breathing Difficulty, Nausea",Direct,0
+39,11,5,0,8,1,Male,Herbicides,Suryapet,"Cough, Fever, Dizziness",Direct,1
+31,6,1,1,7,0,Female,Insecticides,Sangareddy,Dizziness,Direct,0
+35,9,4,0,10,1,Female,Bactericides,Suryapet,Breathing Difficulty,Indirect,1
+40,12,5,1,6,0,Male,Biopesticides,Mancherial,Cough,Direct,1
+29,4,2,0,9,1,Female,Bactericides,Nalgonda,Dizziness,Direct,0
+38,10,3,1,8,0,Female,Herbicides,Medak,Cough,Indirect,0
+34,8,4,0,7,1,Female,Bactericides,Medak,Skin Allergy,Direct,1
+41,13,5,1,10,0,Female,Herbicides,Vikarabad,"Skin Allergy, Breathing Difficulty",Direct,1
+28,5,1,0,9,1,Male,Fungicides,Wanaparthy,"Skin Allergy, Breathing Difficulty, Cough",Direct,0
+36,11,6,1,8,0,Male,Herbicides,Medchal–Malkajgiri,"Dizziness, Fever, Cough",Direct,1
+30,6,2,0,7,1,Female,Fungicides,Medak,"Breathing Difficulty, Vomiting, Dizziness",Direct,0
+45,14,4,1,10,0,Female,Insecticides,Peddapalli,"Breathing Difficulty, Vomiting, Fever",Direct,1
+32,8,3,0,9,1,Male,Biopesticides,Suryapet,"Nausea, Vomiting, Skin Allergy",Indirect,0
+37,9,5,1,8,0,Female,Biopesticides,Peddapalli,"Breathing Difficulty, Fever",Direct,1
+31,5,1,0,7,1,Male,Bactericides,Suryapet,"Nausea, Dizziness, Skin Allergy",Indirect,0
+42,12,6,1,10,0,Female,Bactericides,Vikarabad,"Cough, Breathing Difficulty",Indirect,1
+35,7,2,0,9,1,Female,Fungicides,Nalgonda,Breathing Difficulty,Direct,0
+39,10,4,1,8,0,Male,Bactericides,Mahabubnagar,Vomiting,Direct,1
+34,6,3,0,7,1,Female,Biopesticides,Narayanpet,"Breathing Difficulty, Nausea, Vomiting",Indirect,0
+46,15,5,1,10,0,Male,Herbicides,Yadadri Bhuvanagiri,"Vomiting, Cough, Skin Allergy",Direct,1
+28,4,1,0,9,1,Male,Herbicides,Adilabad,Fever,Indirect,0
+43,13,6,1,8,0,Male,Herbicides,Mahabubnagar,"Cough, Fever",Direct,1
+33,9,2,0,7,1,Female,Insecticides,Warangal Urban,"Vomiting, Dizziness, Cough",Direct,0
+38,11,4,1,10,0,Male,Biopesticides,Jogulamba Gadwal,"Fever, Dizziness",Indirect,1
+30,5,1,0,8,1,Female,Biopesticides,Komaram Bheem,Cough,Indirect,0
+44,14,5,1,9,0,Male,Fungicides,Nirmal,"Cough, Dizziness",Indirect,1
+29,6,3,0,7,1,Male,Fungicides,Kamareddy,"Fever, Nausea",Indirect,0
+41,12,6,1,10,0,Female,Biopesticides,Jogulamba Gadwal,Breathing Difficulty,Direct,1
+32,8,2,0,9,1,Female,Insecticides,Siddipet,Vomiting,Indirect,0
+37,10,4,1,8,0,Female,Biopesticides,Jagtial,Cough,Indirect,1
+34,5,1,0,7,1,Female,Insecticides,Mahabubabad,"Fever, Cough, Nausea",Direct,0
+40,13,5,1,10,0,Male,Herbicides,Mahabubabad,"Breathing Difficulty, Fever, Vomiting",Indirect,1
+31,6,3,0,9,1,Female,Insecticides,Ranga Reddy,"Nausea, Skin Allergy, Fever",Direct,0
+45,15,6,1,8,0,Female,Insecticides,Yadadri Bhuvanagiri,"Nausea, Skin Allergy",Direct,1
+33,7,2,0,7,1,Male,Herbicides,Suryapet,"Fever, Vomiting",Direct,0
+38,11,4,1,10,0,Female,Fungicides,Ranga Reddy,"Breathing Difficulty, Nausea, Vomiting",Indirect,1
+29,4,1,0,9,1,Female,Fungicides,Komaram Bheem,Nausea,Direct,0
+42,14,6,1,8,0,Female,Insecticides,Medchal–Malkajgiri,"Skin Allergy, Dizziness",Indirect,1
+36,9,3,0,7,1,Male,Biopesticides,Mahabubabad,"Dizziness, Vomiting, Nausea",Direct,0
+30,5,2,1,10,0,Female,Herbicides,Suryapet,Breathing Difficulty,Direct,1
+43,12,5,0,9,1,Female,Bactericides,Peddapalli,"Skin Allergy, Nausea, Vomiting",Indirect,0
+28,7,1,1,8,0,Male,Herbicides,Peddapalli,"Dizziness, Vomiting, Nausea",Direct,1
+39,10,4,0,7,1,Male,Biopesticides,Nalgonda,"Cough, Skin Allergy, Fever",Direct,0
+35,6,3,1,10,0,Female,Insecticides,Adilabad,"Breathing Difficulty, Fever",Direct,1
+40,11,5,0,9,1,Male,Herbicides,Nalgonda,Nausea,Indirect,0
+31,5,1,1,8,0,Female,Biopesticides,Nalgonda,Dizziness,Direct,1
+34,8,4,0,7,1,Male,Fungicides,Jangaon,"Skin Allergy, Nausea",Direct,0
+37,9,3,1,10,0,Female,Fungicides,Jangaon,"Dizziness, Breathing Difficulty",Indirect,1
+41,13,5,0,9,1,Female,Fungicides,Mulugu,"Fever, Nausea",Direct,0
+30,4,2,1,8,0,Male,Fungicides,Adilabad,"Vomiting, Breathing Difficulty, Cough",Indirect,1
+44,14,6,0,7,1,Female,Fungicides,Mulugu,"Cough, Fever, Dizziness",Indirect,0
+33,6,1,1,10,0,Female,Fungicides,Komaram Bheem,"Cough, Nausea",Indirect,1
+38,10,4,0,9,1,Male,Insecticides,Khammam,Dizziness,Indirect,0
+32,5,3,1,8,0,Male,Biopesticides,Mahabubnagar,Breathing Difficulty,Direct,1
+46,15,5,0,7,1,Male,Herbicides,Mahabubnagar,Breathing Difficulty,Indirect,0
+29,7,2,1,10,0,Male,Herbicides,Jangaon,Vomiting,Indirect,1
+42,12,6,0,9,1,Female,Bactericides,Medchal–Malkajgiri,"Breathing Difficulty, Dizziness, Fever",Direct,0
+35,9,3,1,8,0,Male,Biopesticides,Wanaparthy,"Cough, Dizziness",Direct,1
+40,11,5,0,7,1,Male,Insecticides,Medak,"Skin Allergy, Nausea",Direct,0
+31,6,1,1,10,0,Female,Fungicides,Komaram Bheem,"Nausea, Skin Allergy, Vomiting",Indirect,1
+34,8,4,0,9,1,Female,Bactericides,Mahabubnagar,"Breathing Difficulty, Skin Allergy, Dizziness",Direct,0
+37,5,3,1,8,0,Female,Insecticides,Mahabubnagar,"Nausea, Breathing Difficulty, Vomiting",Indirect,1
+45,14,6,0,7,1,Male,Herbicides,Ranga Reddy,"Nausea, Vomiting",Direct,0
+28,7,1,1,10,0,Female,Biopesticides,Adilabad,"Cough, Dizziness, Vomiting",Direct,1
+43,13,5,0,9,1,Male,Fungicides,Suryapet,Breathing Difficulty,Direct,0
+30,6,2,1,8,0,Male,Insecticides,Medchal–Malkajgiri,"Cough, Vomiting",Indirect,1
+39,10,4,0,7,1,Female,Bactericides,Karimnagar,Fever,Direct,0
